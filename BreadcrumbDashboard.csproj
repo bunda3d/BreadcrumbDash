@@ -25,9 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Views\CoreUI\icons\coreui-icons-brand.html" />
-    <Content Include="Views\CoreUI\icons\coreui-icons-flag.html" />
-    <Content Include="Views\CoreUI\icons\coreui-icons-free.html" />
+    <Content Remove="Views\Shared\_aside-menu.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -37,9 +35,4 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.7" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.7" />
   </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Views\CoreUI\_partials\" />
-  </ItemGroup>
-
 </Project>
