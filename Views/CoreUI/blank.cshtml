@@ -1,5 +1,4 @@
-﻿@{ Layout = ""; }
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!--
 * CoreUI - Free Bootstrap Admin Template
 * @@version v3.2.0
@@ -51,6 +50,7 @@
 		// Bootstrap ID
 		gtag('config', 'UA-118965717-5');
 	</script>
+	<link href="~/lib/@@coreui/chartjs/dist/css/coreui-chartjs.css" rel="stylesheet">
 </head>
 <body class="c-app">
 	<div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show" id="sidebar">
@@ -224,7 +224,8 @@
 				<svg class="c-icon c-icon-lg">
 					<use xlink:href="~/lib/@@coreui/icons/sprites/free.svg#cil-menu"></use>
 				</svg>
-			</button><a class="c-header-brand d-lg-none" href="#">
+			</button>
+			<a class="c-header-brand d-lg-none" href="#">
 				<svg width="118" height="46" alt="CoreUI Logo">
 					<use xlink:href="assets/brand/coreui.svg#full"></use>
 				</svg>
@@ -322,28 +323,30 @@
 				</ol>
 			</div>
 		</header>
-		<div class="c-body">
-			<main class="c-main">
-				<div class="container-fluid">
-					<div class="fade-in">
-						<!-- PAGE-CONTENT -->
-
-						@RenderBody()
-
-						<!-- /PAGE-CONTENT -->
-					</div>
-				</div>
-			</main>
-			<footer class="c-footer">
-				<div><a href="https://coreui.io">CoreUI</a> &copy; 2020 creativeLabs.</div>
-				<div class="ml-auto">Powered by&nbsp;<a href="https://coreui.io/">CoreUI</a></div>
-			</footer>
-		</div>
 	</div>
+	<div class="c-body">
+		<main class="c-main">
+			<div class="container-fluid">
+				<div class="fade-in">
+					<!-- PAGE-CONTENT -->
+
+					@RenderBody()
+
+					<!-- /PAGE-CONTENT -->
+				</div>
+			</div>
+		</main>
+		<footer class="c-footer">
+			<div><a href="https://coreui.io">CoreUI</a> &copy; 2020 creativeLabs.</div>
+			<div class="ml-auto">Powered by&nbsp;<a href="https://coreui.io/">CoreUI</a></div>
+		</footer>
+	</div>
+
 	<!-- CoreUI and necessary plugins-->
 	<script src="~/lib/@@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
 	<!--[if IE]><!-->
 	<script src="~/lib/@@coreui/icons/js/svgxuse.min.js"></script>
 	<!--<![endif]-->
+	@RenderSection("Scripts", required: false)
 </body>
 </html>

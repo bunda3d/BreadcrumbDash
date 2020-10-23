@@ -38,4 +38,8 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.7" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\CoreUI\_partials\" />
+  </ItemGroup>
+
 </Project>
