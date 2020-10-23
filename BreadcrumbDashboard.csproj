@@ -6,6 +6,31 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="dist.BKP\**" />
+    <Compile Remove="dist\**" />
+    <Compile Remove="src\**" />
+    <Compile Remove="test-fs\**" />
+    <Content Remove="dist.BKP\**" />
+    <Content Remove="dist\**" />
+    <Content Remove="src\**" />
+    <Content Remove="test-fs\**" />
+    <EmbeddedResource Remove="dist.BKP\**" />
+    <EmbeddedResource Remove="dist\**" />
+    <EmbeddedResource Remove="src\**" />
+    <EmbeddedResource Remove="test-fs\**" />
+    <None Remove="dist.BKP\**" />
+    <None Remove="dist\**" />
+    <None Remove="src\**" />
+    <None Remove="test-fs\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Views\CoreUI\icons\coreui-icons-brand.html" />
+    <Content Include="Views\CoreUI\icons\coreui-icons-flag.html" />
+    <Content Include="Views\CoreUI\icons\coreui-icons-free.html" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.7" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.7" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.7" />
